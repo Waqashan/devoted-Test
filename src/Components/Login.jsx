@@ -38,7 +38,6 @@ const Login = () => {
           alignItems: "center",
           padding: "0 6px",
         }}
-        
       >
         {/* <Grid item xs={12} sm={4.5}> */}
         <Box
@@ -47,7 +46,7 @@ const Login = () => {
             boxShadow:
               "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
             borderRadius: "16px",
-            padding: "20px",
+            padding: "20px 30px",
           }}
         >
           <form onSubmit={handleSubmit}>
@@ -61,7 +60,7 @@ const Login = () => {
                 <Box
                   sx={{ display: "flex", gap: "10px", alignItems: "center" }}
                 >
-                  <label>USERNAME</label>
+                  <label style={{ letterSpacing: "1px" }}>USERNAME</label>
                   <span
                     style={{
                       boxShadow:
@@ -85,7 +84,7 @@ const Login = () => {
                 <Box
                   sx={{ display: "flex", gap: "10px", alignItems: "center" }}
                 >
-                  <label>PASSWORD </label>
+                  <label style={{ letterSpacing: "1px" }}>PASSWORD </label>
                   <span
                     style={{
                       boxShadow:
@@ -108,19 +107,25 @@ const Login = () => {
               <Grid item xs={12}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
                   <Button
-                    variant="contained"
                     type="submit"
-                    sx={{ borderRadius: "16px", padding: "5px 28px" }}
+                    className="btn"
+                    sx={{
+                      borderRadius: "16px",
+                      padding: "5px 34px",
+                      boxShadow:
+                        " rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px",
+                        color:"black"
+                    }}
                   >
-                    Log In
+                    LogIn
                   </Button>
                 </Box>
               </Grid>
               <Grid item xs={12}>
                 <Box sx={{ display: "flex", justifyContent: "center" }}>
-                  <Typography>NEW USER?</Typography>
-                  <NavLink to="" style={{ textDecoration: "none" }}>
-                    CLICK HERE TO SIGNUP
+                  <Typography variant="p">NEW USER?</Typography>
+                  <NavLink to="" style={{ textDecoration: "none",color:"black" }}>
+                    CLICK HERE TO SIGNUP!
                   </NavLink>
                 </Box>
               </Grid>
