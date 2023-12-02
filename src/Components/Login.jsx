@@ -38,6 +38,7 @@ const Login = () => {
           alignItems: "center",
           padding: "0 6px",
         }}
+        
       >
         {/* <Grid item xs={12} sm={4.5}> */}
         <Box
